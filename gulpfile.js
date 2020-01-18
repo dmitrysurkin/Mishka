@@ -12,5 +12,5 @@ gulp.task('sass-compile', function () {
 })
 
 gulp.task('watch', function () {
-    gulp.watch('./style/**/*.scss', gulp.series('sass-compile'))
+    gulp.watch('./src/style/**/*.scss', gulp.series('sass-compile'))
 })
