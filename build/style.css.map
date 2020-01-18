@@ -1,0 +1,1 @@
+{"version":3,"file":"style.css","sources":["style.scss","blocks/block.scss"],"sourcesContent":["@import 'blocks/block.scss'","p {\r\n    font-size: 14px;\r\n}"],"names":[],"mappings":"ACAA,AAAA,CAAC,CAAC;EACE,SAAS,EAAE,IAAI,GAClB"}

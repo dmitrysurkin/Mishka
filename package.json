@@ -2,10 +2,11 @@
   "name": "mishka",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {},
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
   "devDependencies": {
-    "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-watch": "^5.0.1"
