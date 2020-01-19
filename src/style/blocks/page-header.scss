@@ -1,0 +1,62 @@
+.page-header {
+	position: relative;
+	background-color: #ffffff;
+	border-bottom: 1px solid #e7e7e7;
+
+	&__main-area {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		max-width: 420px;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__logo {
+		width: 148px;
+		height: 72px;
+	}
+
+	&__search {
+		border-left: 1px solid #ececec;
+		border-right: 1px solid #ececec;
+	}
+
+	&__offers {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__offers-list {
+		position: absolute;
+		z-index: 1;
+		left: 0px;
+		top: 2px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		max-width: 525px;
+	}
+
+	&__trigger {
+		position: absolute;
+		z-index: 1;
+		right: 0px;
+		top: 2px;
+		margin: 0;
+		padding: 22px 0px;
+		max-width: 500px;
+		font-size: 15px;
+		font-weight: 400;
+		font-family: $primary-font;
+	}
+}

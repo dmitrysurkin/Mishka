@@ -1,0 +1,15 @@
+.button-search {
+	display: block;
+	position: relative;
+	padding: 44px 40px;
+	font-size: 0;
+
+	&:before {
+		content: "";
+		position: absolute;
+		transform: translate(-50%, -50%);
+		background: url('../src/img/search.png') no-repeat;
+		width: 18px;
+		height: 18px;
+	}
+}

@@ -1,0 +1,52 @@
+.catalog-button {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	font-size: 20px;
+	font-family: $primary-font;
+	text-align: left;
+
+	&__button {
+		display: block;
+		position: relative;
+		width: 525px;
+		border: none;
+		text-decoration: none;
+		background-color: $green1;
+
+		&--darken {
+			background-color: $green2;
+		}
+
+		&--interior:after {
+			content: "";
+			position: absolute;
+			top: 30px;
+			right: 35px;
+			background-image: url("../src/img/interior.png");
+			width: 40px;
+			height: 60px;
+		}
+
+		&--kids:after {
+			content: "";
+			position: absolute;
+			top: 30px;
+			right: 35px;
+			background-image: url("../src/img/toy.png");
+			width: 60px;
+			height: 60px;
+		}
+	}
+
+	&__title {
+		display: block;
+		padding: 28px;
+		padding-bottom: 50px;
+		font-weight: 700;
+		color: #ffffff;
+		text-align: left;
+		line-height: 30px;
+	}
+}
