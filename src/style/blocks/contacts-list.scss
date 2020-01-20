@@ -1,0 +1,22 @@
+.contacts-list {
+	margin: 0;
+
+	&__wrap {
+		display: flex;
+		margin-bottom: 30px;
+	}
+
+	&__wrap:last-child {
+		margin-bottom: 0;
+	}
+
+	&__termin {
+		width: 25%;
+		margin-right: 10px;
+		flex-shrink: 0;
+	}
+
+	&__description {
+		margin: 0px;
+	}
+}

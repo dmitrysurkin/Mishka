@@ -11,6 +11,7 @@
 		display: block;
 		position: relative;
 		width: 525px;
+		height: 100%;
 		border: none;
 		text-decoration: none;
 		background-color: $green1;
@@ -42,8 +43,10 @@
 
 	&__title {
 		display: block;
-		padding: 28px;
+		padding-top: 28px;
+		padding-left: 28px;
 		padding-bottom: 50px;
+		padding-right: 90px;
 		font-weight: 700;
 		color: #ffffff;
 		text-align: left;

@@ -1,0 +1,38 @@
+.advantages {
+	padding-top: 52px;
+	padding-bottom: 47px;
+	font-family: $primary-font;
+
+	&__head {
+		padding-left: 175px;
+		margin-bottom: 50px;
+	}
+
+	&__title {
+		margin: 0;
+		font-family: $heading;
+		font-size: 53px;
+		font-weight: 700;
+	}
+
+	&__content {
+		padding-left: 175px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0px -15px;
+	}
+
+	&__item {
+		width: 320px;
+		margin: 0px 15px;
+		margin-bottom: 70px;
+
+		&:nth-child(5),
+		&:nth-child(6) {
+			margin-bottom: 0;
+		}
+	}
+}

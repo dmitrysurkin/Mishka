@@ -1,0 +1,24 @@
+.arrow {
+	background: transparent;
+	border: none;
+	font-family: $primary-font;
+	color: $gray2;
+	line-height: 30px;
+	font-size: 0px;
+	width: 86px;
+	height: 50px;
+	cursor: pointer;
+	padding: 0;
+
+	&--next {
+		background-image: url("../src/img/icon-right-arrow.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&--prev {
+		background-image: url("../src/img/icon-left-arrow.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}

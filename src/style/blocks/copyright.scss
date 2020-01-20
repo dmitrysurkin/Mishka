@@ -1,0 +1,23 @@
+.copyright {
+	font-family: $primary-font;
+	font-size: 19px;
+	font-weight: 700;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	&__description {
+		margin-right: 10px;
+	}
+
+	&__link {
+		color: $black;
+		text-decoration: none;
+		font-size: 0;
+	}
+
+	&__svg {
+		fill: $green1;
+	}
+}

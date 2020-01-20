@@ -1,0 +1,23 @@
+.page-footer {
+	padding: 53px 0;
+	background-color: $gray1;
+
+	&__main-area {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__company {
+		width: 175px;
+	}
+
+	&__social-links {
+		width: 350px;
+	}
+
+	&__copyright {
+		width: 260px;
+		justify-content: flex-end;
+	}
+}

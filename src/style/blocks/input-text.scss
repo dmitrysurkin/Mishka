@@ -1,0 +1,13 @@
+.input-text {
+	border: none;
+	background: transparent;
+	padding: 18px;
+	box-shadow: 0 2px 0 0 $black;
+
+	font-family: $primary-font;
+	font-size: 19px;
+
+	&::placeholder {		
+		color: rgba($gray2, 0.2);
+	}
+}

@@ -1,0 +1,99 @@
+.reviews {
+	position: relative;
+	padding-top: 106px;
+	padding-bottom: 190px;
+
+	&:after {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 40px;
+		left: 490px;
+		width: 350px;
+		height: 460px;
+		object-fit: contain;
+		background-image: url("../src/images/reviews.png");
+		background-repeat: no-repeat;
+	}
+
+	&__wrap {
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			bottom: -190px;
+			left: 0px;
+			right: 0px;
+			background-image: url("../src/img/zigzag-gray.png");
+			background-repeat: repeat-x;
+			height: 23px;
+		}
+	}
+
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 175px;
+		margin-bottom: 47px;
+	}
+
+	&__head-title {
+		width: 600px;
+	}
+	
+	&__title {
+		margin: 0;
+		font-family: $heading;
+		font-size: 53px;
+		font-weight: 700;
+	}
+
+	&__button {
+		width: 175px;
+		max-width: 260px;
+	}
+
+	&__content {
+		padding-left: 175px;
+	}
+
+	&__item {
+		display: none;
+		margin: 0;
+		font-family: $primary-font;
+		font-size: 17px;
+		color: $gray2;
+		line-height: 30px;
+		width: 770px;
+
+		&--active {
+			display: block;
+		}
+	}
+
+	&__toggles {
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+	}
+
+	&__description {
+		margin: 0;
+		margin-bottom: 35px;
+		text-align: right;
+	}
+
+	&__author {
+		width: 600px;
+		font-weight: bold;
+		font-style: normal;
+		color: $black;
+	}
+
+	&__contacts {
+		width: 600px;
+		margin: 0;
+	}
+}

@@ -1,0 +1,35 @@
+.field-input-placeholder {
+	position: relative;
+
+	&--phone {
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			transform: translateY(-50%);
+			background-image: url("../src/img/icon-phone.svg");
+			opacity: 0.2;
+			width: 25px;
+			height: 25px;
+		}
+	}
+
+	&--email {
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			transform: translateY(-50%);
+			background-image: url("../src/img/icon-mail.svg");
+			opacity: 0.2;
+			width: 32px;
+			height: 21px;
+		}
+	}
+
+	&__input {
+		width: 100%;
+	}
+}

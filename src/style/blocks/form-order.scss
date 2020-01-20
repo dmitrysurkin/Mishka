@@ -1,0 +1,77 @@
+.form-order {
+	font-family: $primary-font;
+
+	&__fieldset {
+		border: none;
+		padding: 0;
+		margin: 0;
+
+		&--gray {
+			background-color: $gray1;
+		}
+	}
+
+	&__fieldset-wrap {
+		position: relative;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		padding-left: 175px;
+	}
+
+	&__type-field {
+		margin-bottom: 24px;
+		width: 850px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__legend {
+		position: absolute;
+		top: 69px;
+		left: 62px;
+		font-size: 17px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $green1;
+
+		&--email {
+			top: 140px;
+		}
+	}
+
+	&__color-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -12px -15px;
+	}
+
+	&__color-field {
+		width: 230px;
+		margin: 12px 15px;
+	}
+
+	&__text-field {
+		margin-bottom: 15px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__textarea-wrap {
+		margin-bottom: 25px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__submit-wrap {
+		padding-left: 175px;
+		padding-bottom: 50px;
+		display: flex;
+		justify-content: space-between;
+	}
+}

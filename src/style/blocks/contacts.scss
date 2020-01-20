@@ -1,0 +1,63 @@
+.contacts {
+	padding-top: 70px;
+	padding-bottom: 95px;
+
+	font-family: $primary-font;
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 400;
+
+	&__wrap {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+
+		&:before {
+			position: absolute;
+			content: "";
+			top: 61px;
+			left: 63px;
+			width: 47px;
+			height: 80px;
+			background-image: url("../src/img/flag.png");
+		}
+	}
+
+	&__about-contact {
+		padding-left: 175px;
+	}
+
+	&__head {
+		padding-top: 71px;
+		margin-bottom: 47px;
+		width: 290px;
+	}
+
+	&__content {
+		width: 290px;
+	}
+
+	&__list {
+		width: 290px;
+		margin-bottom: 80px;
+	}
+
+	&__title {
+		margin: 0;
+		width: 290px;
+		font-size: 53px;
+		font-weight: 700;
+		line-height: 57px;
+	}
+
+	&__button {
+		width: 230px;
+		max-width: 290px;
+	}
+
+	&__image {
+		width: 524px;
+		height: 457px;
+		object-fit: contain;
+	}
+}

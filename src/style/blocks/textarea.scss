@@ -1,0 +1,12 @@
+.textarea {
+	padding: 18px;
+
+	box-shadow: 0 0 0 2px $black;
+	font-family: $primary-font;
+	font-size: 19px;
+	color: rgba($gray2, 0.2);
+	
+	&__placeholder {
+		opacity: 0.2;
+	}
+}

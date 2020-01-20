@@ -1,0 +1,18 @@
+.feature {
+	&__wrap {
+		display: flex;
+		padding: 5px;
+		padding-left: 0px;
+		border-bottom: 1px solid #ececec;
+		width: 290px;
+	}
+
+	&__termin {
+		width: 33%;
+		margin-right: 10px;
+	}
+	
+	&__description {
+		margin-left: 0;
+	}
+}

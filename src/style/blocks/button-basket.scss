@@ -1,10 +1,6 @@
 .button-basket {
 	display: block;
 	position: relative;
-	padding-top: 35px;
-	padding-bottom: 35px;
-	padding-left: 87px;
-	padding-right: 35px;
 	
 	font-size: 17px;
 	font-weight: 700;
@@ -15,9 +11,6 @@
 	&:before {
 		content: "";
 		position: absolute;
-		top: 50%;
-		left: 35px;
-		transform: translateY(-50%);
 		background: url('../src/img/cart.png') no-repeat;
 		width: 18px;
 		height: 18px;
