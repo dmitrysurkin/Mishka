@@ -1,14 +1,15 @@
 .button {
 	display: block;
-	color: $gray2;
-	font-family: $primary-font;
+
 	font-size: 17px;
+	color: $gray2;
 	font-weight: 700;
+	line-height: 20px;
 	text-align: center;
 	text-decoration: none;
-	line-height: 30px;
 	text-transform: uppercase;
+
 	border: 2px solid $gray2;
-	padding: 10px 25px;
+	padding: 18px 25px;
 	cursor: pointer;
 }

@@ -1,53 +1,99 @@
 .slider {
+	padding-top: 68px;
 	position: relative;
+	margin-top: 0px;
+
 	background-color: $gray1;
 	background-image: url("../src/images/hero-desktop.png");
-	background-position: center;
 	background-repeat: no-repeat;
-	padding-top: 152px;
-	padding-bottom: 213px;
+	background-position: center;
+	border-top: 1px solid $gray3;
 
-	&--inner-page {
-		padding-top: 92px;
-		padding-bottom: 115px;
+	@media screen and (min-width: 768px) {
+		margin-top: -57px;
+		padding-top: 152px;
+	}
+
+	&.--inner-page {
+		padding: 104px 0;
 		background-image: none;
+
+		@media screen and (min-width: 768px) {
+			padding-bottom: 95px;
+		}
 	}
 
 	&__content {
 		display: flex;
+		min-height: 417px;
+		flex-direction: column;
+
+		&.--inner-page {
+			min-height: 0;
+		}
+
+		@media screen and (min-width: 768px) {
+			min-height: 605px;
+		}
+	}
+
+	&__offer {
+		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
-		min-height: 400px;
+		margin-bottom: 50px;
 
-		&--inner-page {
-			min-height: 0;
+		&.--inner-page {
+			margin-bottom: 0;
+		}
+		
+		@media screen and (min-width: 768px) {
+			margin-bottom: 100px;
 		}
 	}
 
 	&__title {
 		display: block;
-		padding: 0px 40px;
 		margin: 0;
-		width: 700px;
-		font-size: 53px;
-		font-weight: 700;
-		font-family: $heading;
+		margin-bottom: 30px;
+		max-width: 45%;
 		text-align: center;
+
+		@media screen and (min-width: 768px) {
+			max-width: 70%;
+		}
+	}
+
+	&__buttons-wrap {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		bottom: 0px;
+		margin-top: auto;
+
+		@media screen and (min-width: 768px) {
+			flex-direction: row;
+		}
 	}
 
 	&__button {
-		position: absolute;
-		display: flex;
-		bottom: 0px;
+		flex-grow: 1;
 	}
 
 	&:after {
 		content: "";
+		display: none;
 		position: absolute;
-		bottom: -4px;
+		bottom: -15px;
 		background-image: url("../src/img/zigzag-fill-desktop.png");
 		background-repeat: repeat-x;
 		height: 34px;
 		width: 100%;
+	}
+
+	@media screen and (min-width: 768px) {
+		&:after {
+			display: block;
+		}
 	}
 }

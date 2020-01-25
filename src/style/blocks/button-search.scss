@@ -5,8 +5,7 @@
 
 	&:before {
 		content: "";
-		position: absolute;
-		transform: translate(-50%, -50%);
+		display: block;
 		background: url('../src/img/search.png') no-repeat;
 		width: 18px;
 		height: 18px;

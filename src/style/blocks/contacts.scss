@@ -1,63 +1,121 @@
 .contacts {
-	padding-top: 70px;
-	padding-bottom: 95px;
+	padding-top: 25px;
+	padding-bottom: 40px;
 
-	font-family: $primary-font;
-	font-size: 17px;
-	line-height: 30px;
-	font-weight: 400;
+	@media screen and (min-width: 768px) {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 70px;
+		padding-bottom: 95px;
+	}
 
 	&__wrap {
 		position: relative;
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
 
 		&:before {
-			position: absolute;
-			content: "";
-			top: 61px;
-			left: 63px;
-			width: 47px;
-			height: 80px;
-			background-image: url("../src/img/flag.png");
+			@media screen and (min-width: 768px) {
+				position: absolute;
+				content: "";
+				top: 0px;
+				right: 0px;
+				width: 47px;
+				height: 80px;
+				background-image: url("../src/img/flag.png");
+			}
+
+			@media screen and (min-width: 1200px) {
+				left: 63px;
+				top: 61px;
+			}
+		}
+
+
+		@media screen and (min-width: 1200px) {
+			padding-left: 175px;
+			flex-direction: row;
+			justify-content: space-between;
 		}
 	}
 
-	&__about-contact {
-		padding-left: 175px;
-	}
-
 	&__head {
-		padding-top: 71px;
 		margin-bottom: 47px;
-		width: 290px;
+		max-width: 290px;
+
+		@media screen and (min-width: 1200px) {
+			padding-top: 71px;
+		}
 	}
 
 	&__content {
-		width: 290px;
+		margin-bottom: 30px;
+
+		@media screen and (min-width: 1200px) {
+			max-width: 290px;
+			margin-bottom: 0;
+		}
 	}
 
 	&__list {
-		width: 290px;
-		margin-bottom: 80px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 30px;
+
+		@media screen and (min-width: 1200px) {
+			margin-bottom: 45px;
+			flex-direction: column;
+		}
+	}
+
+	&__list-wrap {
+		margin-right: 50px;
+
+		@media screen and (min-width: 1200px) {
+			margin-right: 0px;
+		}
+	}
+
+	&__termin {
+		width: 70px;
 	}
 
 	&__title {
 		margin: 0;
-		width: 290px;
+		max-width: 290px;
 		font-size: 53px;
 		font-weight: 700;
 		line-height: 57px;
 	}
 
 	&__button {
-		width: 230px;
-		max-width: 290px;
+		@media screen and (min-width: 1200px) {
+			max-width: 290px;
+		}
 	}
 
 	&__image {
-		width: 524px;
-		height: 457px;
-		object-fit: contain;
+		width: 100vw;
+		position: relative;
+		left: 50%;
+		right: 50%;
+		margin-left: -50vw;
+		margin-right: -50vw;
+		height: 460px;
+		object-fit: cover;
+
+		@media screen and (min-width: 1200px) {
+			width: 524px;
+			height: 457px;
+			left: 0;
+			right: 0;
+			margin-left: 0;
+			margin-right: 0;
+		}
 	}
 }

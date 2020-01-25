@@ -1,38 +1,56 @@
 .advantages {
-	padding-top: 52px;
-	padding-bottom: 47px;
-	font-family: $primary-font;
+	padding-top: 25px;
+	padding-bottom: 40px;
+
+	@media screen and (min-width: 768px) {
+		padding-top: 45px;
+		padding-bottom: 70px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 52px;
+		padding-bottom: 47px;
+	}
 
 	&__head {
-		padding-left: 175px;
-		margin-bottom: 50px;
+		margin-bottom: 35px;
+
+		@media screen and (min-width: 1200px) {
+			padding-left: 175px;
+			margin-bottom: 49px;
+		}
 	}
 
 	&__title {
 		margin: 0;
+		margin-bottom: 15px;
 		font-family: $heading;
 		font-size: 53px;
 		font-weight: 700;
 	}
 
 	&__content {
-		padding-left: 175px;
+		@media screen and (min-width: 1200px) {
+			padding-left: 175px;
+		}
 	}
 
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0px -15px;
+		margin: -15px -15px;
+
+		@media screen and (min-width: 768px) {
+			margin: -30px -15px;
+		}
 	}
 
 	&__item {
-		width: 320px;
-		margin: 0px 15px;
-		margin-bottom: 70px;
+		margin: 15px 15px;
 
-		&:nth-child(5),
-		&:nth-child(6) {
-			margin-bottom: 0;
+		@media screen and (min-width: 768px) {
+			margin: 30px 15px;
+			max-width: 320px;
 		}
 	}
 }

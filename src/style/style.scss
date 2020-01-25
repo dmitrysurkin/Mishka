@@ -2,15 +2,14 @@
 @import 'common/_fonts.scss';
 @import 'common/base.scss';
 @import 'common/normalize.scss';
-
 @import 'blocks/container.scss';
+
+@import 'blocks/title.scss';
 @import 'blocks/site-list.scss';
 @import 'blocks/logo.scss';
-@import 'blocks/triggers.scss';
 @import 'blocks/button-search.scss';
 @import 'blocks/button-basket.scss';
 @import 'blocks/page-header.scss';
-@import 'blocks/offers-list.scss';
 @import 'blocks/slider.scss';
 @import 'blocks/catalog-button.scss';
 @import 'blocks/feature.scss';
@@ -20,22 +19,20 @@
 @import 'blocks/special-offer.scss';
 @import 'blocks/advantages-list.scss';
 @import 'blocks/advantages.scss';
-@import 'blocks/reviews.scss';
 @import 'blocks/arrow.scss';
+@import 'blocks/reviews.scss';
 @import 'blocks/contacts-list.scss';
 @import 'blocks/contacts.scss';
 @import 'blocks/page-footer.scss';
-@import 'blocks/social.scss';
+@import 'blocks/social-link.scss';
 @import 'blocks/copyright.scss';
-@import 'blocks/goods.scss';
 @import 'blocks/goods-list.scss';
+@import 'blocks/goods.scss';
 @import 'blocks/about-company.scss';
 @import 'blocks/field-radio.scss';
 @import 'blocks/field-checkbox.scss';
-@import 'blocks/input-text.scss';
 @import 'blocks/field-input-text.scss';
 @import 'blocks/field-input-placeholder.scss';
-@import 'blocks/textarea.scss';
 @import 'blocks/field-textarea.scss';
 @import 'blocks/make-order.scss';
 @import 'blocks/form-order.scss';

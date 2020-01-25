@@ -5,10 +5,26 @@
 	font-weight: 400;
 	font-size: 17px;
 
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		padding-top: 57px;
+	}
+
+	@media screen and (max-width: 767px) {
+		padding-top: 20px;
+	}
+
 	&__content {
 		display: flex;
 		justify-content: center;
 		margin-bottom: 9px;
+
+		@media screen and (min-width: 768px) and (max-width: 1199px) {
+			justify-content: flex-start;
+		}
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 40px;
+		}
 	}
 
 	&__description {

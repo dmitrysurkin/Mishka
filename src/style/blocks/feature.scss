@@ -1,18 +1,22 @@
-.feature {
+.feature {	
+	margin: 0;
+
+	font-size: 15px;
+	line-height: 20px;
+
 	&__wrap {
 		display: flex;
-		padding: 5px;
-		padding-left: 0px;
 		border-bottom: 1px solid #ececec;
-		width: 290px;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
 	}
 
 	&__termin {
 		width: 33%;
 		margin-right: 10px;
 	}
-	
+
 	&__description {
-		margin-left: 0;
+		margin: 0;
 	}
 }

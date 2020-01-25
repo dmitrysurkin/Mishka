@@ -20,6 +20,7 @@ input:-webkit-autofill {
 
 html {
 	box-sizing: border-box;
+	font-family: $primary-font;
 }
 
 .visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden, input[type="text"].visually-hidden {
@@ -32,4 +33,8 @@ padding: 0;
 clip-path: inset(100%);
 clip: rect(0 0 0 0);
 overflow: hidden;
+}
+
+.flex {
+	display: flex;
 }

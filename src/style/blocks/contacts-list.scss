@@ -1,13 +1,16 @@
 .contacts-list {
 	margin: 0;
 
+	font-size: 15px;
+	line-height: 30px;
+
+	@media screen and (min-width: 768px) {
+		font-size: 17px;
+	}
+
 	&__wrap {
 		display: flex;
 		margin-bottom: 30px;
-	}
-
-	&__wrap:last-child {
-		margin-bottom: 0;
 	}
 
 	&__termin {
@@ -18,5 +21,10 @@
 
 	&__description {
 		margin: 0px;
+
+		&.--underline {
+			text-decoration: underline;
+			text-decoration-color: $green1;
+		}
 	}
 }

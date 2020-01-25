@@ -1,14 +1,38 @@
 .field-input-text {
 	display: flex;
 	align-items: center;
-	font-family: $primary-font;
+	flex-wrap: wrap;
 
 	&__label {
+		font-size: 17px;
+		line-height: 18px;
 		font-weight: 700;
-		margin-right: 25px;
+		width: 100%;
+		margin-bottom: 3px;
+
+		@media screen and (min-width: 768px) {
+			width: auto;
+			margin-bottom: 0;
+			margin-right: 25px;
+			font-size: 18px;
+		}
 	}
 
 	&__input {
-		width: 100%;
+		font-size: 17px;
+		flex-grow: 1;
+		padding: 14px;
+		padding-left: 0px;
+		border: none;
+		border-bottom: 2px solid $black;
+
+		&::placeholder {
+			color: rgba($gray2, 0.3);
+		}
+
+		@media screen and (min-width: 768px) {
+			padding-left: 14px;
+			font-size: 19px;
+		}
 	}
 }

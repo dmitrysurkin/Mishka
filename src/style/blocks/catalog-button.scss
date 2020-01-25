@@ -1,55 +1,37 @@
 .catalog-button {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 30px;
 
-	font-size: 20px;
-	font-family: $primary-font;
-	text-align: left;
+	font-size: 19px;
+	font-weight: 700;
+	line-height: 24px;
+	text-decoration: none;
+	color: #ffffff;
 
-	&__button {
-		display: block;
-		position: relative;
-		width: 525px;
-		height: 100%;
-		border: none;
-		text-decoration: none;
-		background-color: $green1;
+	background-color: $green1;
 
-		&--darken {
-			background-color: $green2;
-		}
-
-		&--interior:after {
-			content: "";
-			position: absolute;
-			top: 30px;
-			right: 35px;
-			background-image: url("../src/img/interior.png");
-			width: 40px;
-			height: 60px;
-		}
-
-		&--kids:after {
-			content: "";
-			position: absolute;
-			top: 30px;
-			right: 35px;
-			background-image: url("../src/img/toy.png");
-			width: 60px;
-			height: 60px;
-		}
+	@media screen and (min-width: 768px) {
+		padding: 35px;
+		font-size: 20px;
+		line-height: 30px;
 	}
 
-	&__title {
-		display: block;
-		padding-top: 28px;
-		padding-left: 28px;
-		padding-bottom: 50px;
-		padding-right: 90px;
-		font-weight: 700;
-		color: #ffffff;
-		text-align: left;
-		line-height: 30px;
+	&.--darken {
+		background-color: $green2;
+	}
+
+	&.--interior::after {
+		content: "";
+		background-image: url("../src/img/interior.png");
+		width: 40px;
+		height: 60px;
+	}
+
+	&.--kids::after {
+		content: "";
+		background-image: url("../src/img/toy.png");
+		width: 60px;
+		height: 60px;
 	}
 }

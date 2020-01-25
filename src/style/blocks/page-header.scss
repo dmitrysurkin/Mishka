@@ -1,83 +1,105 @@
 .page-header {
-	position: relative;
 	background-color: #ffffff;
-	border-bottom: 1px solid #e7e7e7;
+
+	@media screen and (max-width: 767px) {
+		padding: 20px 0;
+	}
 
 	&__main-area {
 		display: flex;
-		align-items: center;
 		justify-content: space-between;
-	}
-
-	&__list {
-		display: flex;
 		flex-wrap: wrap;
-		align-items: center;
-		max-width: 420px;
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
 
-	&__logo {
-		width: 148px;
-		height: 72px;
-	}
-
-	&__search {
-		border-left: 1px solid #ececec;
-		border-right: 1px solid #ececec;
-		padding: 44px 40px;
-	}
-
-	&__basket {
-		padding-top: 35px;
-		padding-bottom: 35px;
-		padding-left: 87px;
-		padding-right: 35px;
-	}
-
-	&__button-basket {
-		&:before {
-			left: -45px;
+		@media screen and (max-width: 767px) {
+			justify-content: center;
 		}
 	}
 
-	&__offers {
-		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+	&__menu {
+		margin: 0 -35px;
+		max-width: 445px;
+		z-index: 1;
+
+		@media screen and (max-width: 1199px) {
+			order: 1;
+			max-width: 410px;
+			font-size: 15px;
+			margin: 0 -30px;
+		}
+
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
 	}
 
-	&__offers-list {
-		position: absolute;
-		z-index: 1;
-		left: 0px;
-		top: 2px;
+	&__shop-button {
 		display: flex;
 		flex-wrap: wrap;
-		align-items: center;
-		max-width: 525px;
+		margin: 0 -35px;
+		max-width: 410px;
+
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
 	}
 
-	&__triggers-list {
+	&__item {
+		padding: 35px;
+
+		&.--tablet {
+			@media screen and (max-width: 1199px) {
+				padding: 20px 0;
+				margin: 0 30px;
+			}
+		}
+	}
+
+	&__basket {
+		display: flex;
+
+		&:before {
+			margin-right: 30px;
+		}
+	}
+
+	&__sub-menu {
 		display: flex;
 		flex-wrap: wrap;
-		position: absolute;
 		z-index: 1;
-		right: 0px;
-		top: 2px;
-		margin: 0 -10px;
-		max-width: 500px;
-		padding-right: 10px;
+		max-width: 48%;
 		font-size: 15px;
-		font-weight: 400;
-		font-family: $primary-font;
+		margin: 0 -30px;
+
+		@media screen and (max-width: 1199px) {
+			display: none;
+		}
+	}
+
+	&__sub-item {
+		padding: 20px 0;
+		margin: 0 30px;
+	}
+
+	&__triggers {
+		display: flex;
+		flex-wrap: wrap;
+		z-index: 1;
+		max-width: 48%;
+		font-size: 15px;
+		margin: 0 -30px;
+
+		@media screen and (max-width: 1199px) {
+			order: 2;
+			max-width: 335px;
+		}
+
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
 	}
 
 	&__triggers-item {
-		margin: 0 10px;
-		padding: 22px 0px;
+		margin: 0 30px;
+		padding: 20px 0;
 	}
 }

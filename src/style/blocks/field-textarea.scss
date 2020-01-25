@@ -1,5 +1,22 @@
 .field-textarea {
 	&__input {
 		width: 100%;
+		padding: 18px;
+
+		font-size: 17px;
+		line-height: 19px;
+
+		border: 2px solid $black;
+		color: rgba($gray2, 0.3);
+
+		&::placeholder {
+			color: rgba($gray2, 0.3);
+		}
+
+		@media screen and (min-width: 768px) {
+			padding: 20px;
+			font-size: 19px;
+			line-height: 18px;
+		}
 	}
 }

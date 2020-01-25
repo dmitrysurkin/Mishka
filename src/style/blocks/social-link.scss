@@ -1,0 +1,33 @@
+.social-link {
+	font-size: 0;
+
+	&.--instagram {
+		&:before {
+			content: "";
+			display: block;
+			width: 30px;
+			height: 30px;
+			background: url("../src/img/instagram.svg") no-repeat center;
+		}
+	}
+
+	&.--facebook {
+		&:before {
+			content: "";
+			display: block;
+			width: 30px;
+			height: 30px;
+			background: url("../src/img/facebook.svg") no-repeat center;
+		}
+	}
+
+	&.--twitter {
+		&:before {
+			content: "";
+			display: block;
+			width: 30px;
+			height: 30px;
+			background: url("../src/img/twitter.svg") no-repeat center;
+		}
+	}
+}
